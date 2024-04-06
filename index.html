@@ -9,11 +9,67 @@
     <link rel="stylesheet" href="./css/vars.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/3586bb7bd2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/macarons.png" type="image/x-icon">
   </head>
 
   <body>
 
+    <header class="topo">
+        <h1 class="topo__marca"> Sweet Lounge </h1>
+    </header>
+
+    <main>
+        <section class="card-area">
+            <div class="card-area__card"> 
+                <span class="card-area__img-area"> <img class="card-area__foto" src= "./img/sorvete.png" alt="Imagem Sorvete de morango"> </span>
+                <h2 class="card-area__title">Sorvete de Morango</h2>
+                <span class="card-area__price">R$10,00</span>
+                <div class="modal__unit-control">
+                    <button class="modal__btn-remove"><i class="fa-solid fa-minus"></i></button>
+                    <span id="valor">1</span>
+                    <button class="modal__btn-add"><i class="fa-solid fa-plus"></i></button>
+                    <div class="modal__btn-area">
+                        <button class="btn__selecionar">Selecionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-area__card"> 
+                <span class="card-area__img-area"> <img class="card-area__foto" src= "./img/cupcake.png" alt="Imagem cupcake de morango"> </span>
+                <h2 class="card-area__title">Cupcake de Morango</h2>
+                <span class="card-area__price">R$10,00</span>
+                <div class="modal__unit-control">
+                    <button class="modal__btn-remove"><i class="fa-solid fa-minus"></i></button>
+                    <span id="valor">1</span>
+                    <button class="modal__btn-add"><i class="fa-solid fa-plus"></i></button>
+                    <div class="modal__btn-area">
+                        <button class="btn__selecionar">Selecionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-area__card"> 
+                <span class="card-area__img-area"> <img class="card-area__foto" src= "./img/macarons.png" alt="Imagem Sorvete de morango"> </span>
+                <h2 class="card-area__title">Macarons</h2>
+                <span class="card-area__price">R$10,00</span>
+                <div class="modal__unit-control">
+                    <button class="modal__btn-remove"><i class="fa-solid fa-minus"></i></button>
+                    <span id="valor">1</span>
+                    <button class="modal__btn-add"><i class="fa-solid fa-plus"></i></button>
+                    <div class="modal__btn-area">
+                        <button class="btn__selecionar">Selecionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <h2>Pedido</h2>
+
+        </aside>
+
+
+    </main>
 
   </body>
 </html>

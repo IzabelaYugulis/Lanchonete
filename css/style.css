@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    gap: 10px;
+
+
+}
+.topo{
+    background-color: var(--color-rosa-medio);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   font-family: var(--font-titulo);
+   font-size: 2rem;
+}
+.card-area__title{
+    
+    color: var(--color-rosa-escuro);
+    font-family: var(--font-subtitulo);
+    font-size: 1rem;
+    
+}
+.card-area__price{
+    font-family: var(--font-botao);
+    color: var(--color-rosa-medio);
+}
+.btn__selecionar{
+   background-color: var(--color-rosa-medio);
+   font-family: var(--font-botao);
+   color: var(--color-branco);
+   border: none;
+   border-radius: 6px;
+   height: 2rem;
+   width: 7rem;
+   padding: 8px 16px;
+}
+.btn__selecionar:hover{
+    background-color: var(--color-rosa-hover);
+}
+
+.modal__unit-control{
+    display: flex;
+    justify-content: space-between;
+    width: 162px;
+    background-color: var(--color-rosa-claro);
+    align-items: center;
+    font-family: var(--font-botao);
+    color: var(--color-rosa-medio);
+    border-radius: 5px;
+
+}
+.modal__btn-remove, .modal__btn-add{
+    background-color: var(--color-rosa-claro);
+    border-radius: 1rem;
+   padding: 5px;
+    border: none;
+    color: var(--color-rosa-medio);
+}
+
+
+.topo__marca {
+    color: var(--color-branco);
+}
+.card-area {
+    display: flex;
+    align-items: center;
+  
+}
+.card-area__card{
+    margin: 10px;
+}
+
+.card-area__img-area{
+    display: flex;
+    background-color: var(--color-rosa-claro);
+    width: 200px;
+    height:300px;
+    border-radius: 1rem;
+}
+
+.card-area__foto{
+    margin: 10px;
+    padding: 10px;
+   
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+

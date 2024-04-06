@@ -5,7 +5,7 @@
 
 @font-face{
     font-family: "Archivo";
-    src: url(../font/Archivo-Regular.ttf);
+    src: url(../font/ArchivoBlack-Regular.ttf);
 }
 
 @font-face {
@@ -16,11 +16,12 @@
 :root{
 --font-titulo: "Lobster";
 --font-botao: "Coiny";
---font-subtitulo: "archivo";
+--font-subtitulo: "Archivo";
 
 --color-branco: #ffff;
 --color-rosa-claro: #facada;
 --color-rosa-medio: #FF427D;
 --color-rosa-escuro: #AC1D51;
+--color-rosa-hover: #D01B5C;
 
 }
