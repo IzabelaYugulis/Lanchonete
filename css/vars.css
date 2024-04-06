@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Coiny";
+    src: url(../font/Coiny-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Archivo";
+    src: url(../font/Archivo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../font/Lobster-Regular.ttf);
+}
+
+:root{
+--font-titulo: "Lobster";
+--font-botao: "Coiny";
+--font-subtitulo: "archivo";
+
+--color-branco: #ffff;
+--color-rosa-claro: #facada;
+--color-rosa-medio: #FF427D;
+--color-rosa-escuro: #AC1D51;
+
+}
