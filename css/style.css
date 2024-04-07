@@ -14,47 +14,35 @@ main {
    font-size: 2rem;
 }
 .card-area__title{
-    
+    margin: 1rem;
     color: var(--color-rosa-escuro);
     font-family: var(--font-subtitulo);
-    font-size: 1rem;
+    font-size: 1.25rem;
+    align-items: center;
     
 }
 .card-area__price{
+    
     font-family: var(--font-botao);
     color: var(--color-rosa-medio);
+    font-size: 2rem;
+    margin: 5px;
+    border: 1rem;
 }
 .btn__selecionar{
+    font-size: 1.25rem;
+    margin: 20px;
    background-color: var(--color-rosa-medio);
    font-family: var(--font-botao);
    color: var(--color-branco);
    border: none;
    border-radius: 6px;
-   height: 2rem;
-   width: 7rem;
-   padding: 8px 16px;
+   height: 2.25rem;
+   width: 10rem;
+   
 }
 .btn__selecionar:hover{
     background-color: var(--color-rosa-hover);
-}
-
-.modal__unit-control{
-    display: flex;
-    justify-content: space-between;
-    width: 162px;
-    background-color: var(--color-rosa-claro);
-    align-items: center;
-    font-family: var(--font-botao);
-    color: var(--color-rosa-medio);
-    border-radius: 5px;
-
-}
-.modal__btn-remove, .modal__btn-add{
-    background-color: var(--color-rosa-claro);
-    border-radius: 1rem;
-   padding: 5px;
-    border: none;
-    color: var(--color-rosa-medio);
 }
 
 
@@ -64,25 +52,49 @@ main {
 .card-area {
     display: flex;
     align-items: center;
+    margin: 1rem;
   
 }
 .card-area__card{
     margin: 10px;
-}
-
-.card-area__img-area{
-    display: flex;
-    background-color: var(--color-rosa-claro);
-    width: 200px;
-    height:300px;
-    border-radius: 1rem;
-}
-
-.card-area__foto{
-    margin: 10px;
-    padding: 10px;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    text-align: center;
+}
+.card-area__foto{
+    display: block;
+    border: 10px;
+    align-items: center;
+    margin: 1.25rem;
+    height: 250px;
+    width:250px;   
 }
 
+.area-img{
+background-color: var(--color-rosa-claro);
+border-radius: 10px;
+height: 400px;
+width:300px; 
+align-content: center;
+}
+
+.modal__unit-control{
+
+    display: block;
+    margin: 10px;
+    
+
+}
+.modal__btn-remove, .modal__btn-add{
+    font-size: 1rem;
+   font-family: var(--font-botao);
+   color: var(--color-rosa-medio);
+   
+}
+
+
+.topo__pedidos{
+    font-family: var(--font-titulo);
+    color: var(--color-rosa-medio);
+    font-size: 3rem;
+    text-align: center;
+}
