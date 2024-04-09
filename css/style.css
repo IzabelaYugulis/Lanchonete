@@ -1,9 +1,10 @@
 main {
-    display: flex;
-    gap: 10px;
+   
+    align-items: center;
 
 
 }
+/*Topo do site*/
 .topo{
     background-color: var(--color-rosa-medio);
    display: flex;
@@ -12,6 +13,35 @@ main {
    height: 60px;
    font-family: var(--font-titulo);
    font-size: 2rem;
+}
+/*Area com produtos-cards com imagens e botoes*/
+
+.area-img{
+    background-color: var(--color-rosa-claro);
+    border-radius: 10px;
+    height: 400px;
+    width:300px; 
+    align-content: center;
+    }
+
+    .card-area__foto{
+        display: block;
+        border: 10px;
+        align-items: center;
+        margin: 1.25rem;
+        height: 250px;
+        width:250px;   
+    }
+    
+
+
+.card-area{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 .card-area__title{
     margin: 1rem;
@@ -29,21 +59,6 @@ main {
     margin: 5px;
     border: 1rem;
 }
-.btn__selecionar{
-    font-size: 1.25rem;
-    margin: 20px;
-   background-color: var(--color-rosa-medio);
-   font-family: var(--font-botao);
-   color: var(--color-branco);
-   border: none;
-   border-radius: 6px;
-   height: 2.25rem;
-   width: 10rem;
-   
-}
-.btn__selecionar:hover{
-    background-color: var(--color-rosa-hover);
-}
 
 
 .topo__marca {
@@ -59,42 +74,67 @@ main {
     margin: 10px;
     align-items: center;
     text-align: center;
-}
-.card-area__foto{
-    display: block;
-    border: 10px;
-    align-items: center;
-    margin: 1.25rem;
-    height: 250px;
-    width:250px;   
-}
-
-.area-img{
-background-color: var(--color-rosa-claro);
-border-radius: 10px;
-height: 400px;
-width:300px; 
-align-content: center;
-}
-
-.modal__unit-control{
-
-    display: block;
-    margin: 10px;
     
+}
+/*botões*/
+.modal__unit-control{
+    display: block;
+    margin: 10px; 
+    background-color: var(--color-branco);
+    font-size: 2rem;
+    font-family: var(--font-botao);
+    color: var(--color-rosa-escuro);
+}
+.card-area__button-add-remove {
+    color: var(--color-rosa-claro);
+    font-size: 2rem;
+    cursor: wait;
+    margin-top: -56px;
+    background-color: var(--color-branco);
+    border: none;
+}
+
+.card-area__button-add-remove:hover{
+    color:var(--color-rosa-hover) ;
 
 }
-.modal__btn-remove, .modal__btn-add{
-    font-size: 1rem;
+
+.btn__selecionar{
+    font-size: 1.25rem;
+    margin: 20px;
+   background-color: var(--color-rosa-medio);
    font-family: var(--font-botao);
-   color: var(--color-rosa-medio);
+   color: var(--color-branco);
+   border: none;
+   border-radius: 6px;
+   height: 2.25rem;
+   width: 10rem;
    
 }
-
-
-.topo__pedidos{
-    font-family: var(--font-titulo);
-    color: var(--color-rosa-medio);
-    font-size: 3rem;
-    text-align: center;
+.btn__selecionar:hover{
+    background-color: var(--color-rosa-hover);
 }
+/*------*/
+
+
+/*footer*/
+.footer {
+    color: var(--color-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 104px;
+    font-size: 1rem;
+    background-color: var(--color-rosa-medio);
+    height: 144px;
+    font-family: var(--font-subtitulo);
+    line-height: 24px;
+
+}
+
+.footer__icones {
+    font-size: 1.25rem;
+}
+/*----*/
+
