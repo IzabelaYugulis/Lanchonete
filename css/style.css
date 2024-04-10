@@ -239,7 +239,7 @@ input:disabled{
     color: var(--color-rosa-escuro);
     font-size: 1rem;
     font-family: var(--font-subtitulo);
-    margin-top: 10px; /* Espaçamento superior para separar do conteúdo anterior */
+    margin-top: 10px; 
 }
 
 
@@ -270,11 +270,11 @@ input:disabled{
 }
 
 .carrinho__remover i {
-    margin-right: 3px; /* Espaçamento à direita para separar do texto */
+    margin-right: 3px; 
 }
 
 .carrinho--visivel {
-    display: block; /* Mostrar o carrinho quando a classe estiver presente */
+    display: block; 
 }
 
 /*footer*/
