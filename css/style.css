@@ -1,34 +1,34 @@
-main {
-display: flexbox;
-align-items: center;
-justify-content: center;
-justify-items: center;  
-    
-
-
+/* Geral */
+body {
+    margin: 0;
+    padding: 0;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-branco);
+}
+
 /*Topo do site*/
 .topo{
     background-color: var(--color-rosa-medio);
-   display: flex;
-   align-items: center;
-   justify-content: first baseline;
-   height: 60px;
-   font-family: var(--font-titulo);
-   font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+    padding: 0 20px;
 }
 .area-img-header{
-    width:300px; 
-    align-content: end;
-    
+    width: 50px;
+    margin: 20px;
 }
 .card-area__foto-carrinho{
-    display: block;
-        border: 10px;
-        align-items: center;
-        margin: 1.25rem;
-        height: 50px;
-        width:50px;   
+    height: 50px;
+    width: 50px; 
        
 }
 /*Area com produtos-cards com imagens e botoes*/
@@ -42,39 +42,33 @@ justify-items: center;
     }
 
     .card-area__foto{
-        display: block;
-        border: 10px;
-        align-items: center;
-        margin: 1.25rem;
-        height: 250px;
-        width:250px;   
+        height: 60%;
+    width: 60%;
     }
     
 
 
 .card-area{
-
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    gap: 20px;
+    padding: 20px;
 
 }
 .card-area__title{
-    margin: 1rem;
+    margin: 10px;
     color: var(--color-rosa-escuro);
     font-family: var(--font-subtitulo);
     font-size: 1.25rem;
-    align-items: center;
-    
 }
 .card-area__price{
     
     font-family: var(--font-botao);
     color: var(--color-rosa-medio);
     font-size: 2rem;
-    margin: 5px;
-    border: 1rem;
+    margin: 15px;
+    border: 10px;
 }
 
 
@@ -88,9 +82,14 @@ justify-items: center;
   
 }
 .card-area__card{
-    margin: 10px;
+   
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    width: 300px;
     
 }
 /*botões*/
@@ -146,81 +145,137 @@ justify-items: center;
 .btn__adicionar-carrinho:hover{
     background-color: var(--color-rosa-hover);
 }
-
-
-
-/*------*/
-/*carrinho*/
-.carrinho{
-    display: flex; 
-    flex-direction: column;   
-    background-color: var(--color-azul-claro);    
-    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
-    gap: 16px;
-    width: 504px;
-    height: 1016px;
-    padding: 16px 8px;
-    align-items: center;
-
+.qty .count {
+    font-family: var(--font-botao);
+    color: var(--color-rosa-escuro);
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 2px
+    ;min-width: 35px;
+    text-align: center;
 }
-.carrinho__titulo{
-margin: 10px;
-border: 10px;
-padding: 10px;
-font-family: var(--font-titulo);
-color: var(--color-rosa-medio);
-font-size: 4rem;
-
-}
-.carrinho__img{
-    width: 90px;
-    width: 90px;
+.qty .plus {
+    font-family: var(--font-botao);
     background-color: var(--color-rosa-claro);
-    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    }
+.qty .minus {
+     font-family: var(--font-botao);
+    background-color: var(--color-rosa-claro);
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
 }
-.area-carrinho-quantidade-produto{
-font-size: 2rem;
-padding: 10px;
-font-family: var(--font-subtitulo);
+div {
+    text-align: center;
+}
+.minus:hover{
+    background-color: var(--color-rosa-hover);
+}
+.plus:hover{
+    background-color: var(--color-rosa-hover);
+}
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+input{  
+    border: 0;
+    width: 2%;
+}
+nput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:disabled{
+    background-color:white;
+}
 
+
+/*carrinho*/
+.carrinho {
+    display: none; 
+    position: fixed; 
+    top: 50px; 
+    right: 20px; /* Distância da direita da página */
+    height: 1016px;
+    width: 504px; 
+    background-color: #ffffff; 
+    border: 1px solid var(--color-rosa-claro); 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    overflow-y: auto; 
+    z-index: 1000; 
 }
-.carrinho__item1,.carrinho__item2, .carrinho__item3{
+
+
+.carrinho__item {
+    margin-bottom: 10px;
+}
+
+.carrinho__total {
     color: var(--color-rosa-escuro);
+    font-size: 1rem;
     font-family: var(--font-subtitulo);
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px;
-    width: 488px;
-    height: 105px;
-    padding: 16px;
-    gap: 16px;   
-    opacity: 80%; 
-}
-.valor{
-    justify-content: center;
-    align-items: center;
-}
-.area-carrinho-botoes{
-    justify-content: center;
-    align-items: center;
-}
-
-.carrinho__preco-final{
-    color: var(--color-rosa-escuro);
-    font-family: var(--font-subtitulo);
-    font-size: 1.25rem;
-    display: flex;   
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-
+    margin-top: 10px; /* Espaçamento superior para separar do conteúdo anterior */
 }
 
 
+.carrinho__titulo {
+    color: var(--color-rosa-medio);
+    font-family: var(--font-titulo);
+    font-size: 3em; 
+    margin-bottom: 10px; 
+}
 
 
+.carrinho__lista {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    max-height: calc(80vh - 50px - 40px);
+    overflow-y: auto; 
+}
+
+.carrinho__icones {
+    margin-top: 20px; 
+}
+
+.carrinho__fechar {
+    float: right; 
+    cursor: pointer; 
+    color: #999; 
+}
+
+.carrinho__remover i {
+    margin-right: 3px; /* Espaçamento à direita para separar do texto */
+}
+
+.carrinho--visivel {
+    display: block; /* Mostrar o carrinho quando a classe estiver presente */
+}
 
 /*footer*/
 .footer {

@@ -20,7 +20,7 @@
     <header class="topo">
         <h1 class="topo__marca"> Sweet Lounge </h1>
         <div class="area-img-header">
-            <img class="card-area__foto-carrinho" src="./img/carrinho-de-compras.png" alt="Imagem Sorvete de morango">
+            <img class="card-area__foto-carrinho" src="./img/carrinho-de-compras.png" alt="carrinho-de-compras">
         </div>
     </header>
 
@@ -28,20 +28,17 @@
         <section class="card-area">
             <div class="card-area__card">
                 <div class="area-img">
-                    <img class="card-area__foto" src="./img/sorvete.png" alt="Imagem Sorvete de morango">
+                    <img class="card-area__foto" src="./img/macarons.png" alt="Imagem de macarons">
                 </div>
-                <h2 class="card-area__title">Sorvete de Morango</h2>
+                <h2 class="card-area__title">Macarons Variados </h2>
                 <span class="card-area__price">R$10,00</span>
-
                 <div class="modal__unit-control">
-                    <button class="card-area__button-add-remove">
-                        <i class="fa-solid fa-circle-minus"></i>
-                    </button>
-                    <span id="valor">1</span>
-                    <button class="card-area__button-add-remove">
-                        <i class="fa-solid fa-circle-plus"></i>
-                    </button>
 
+                    <div class="qty mt-5">
+                        <span class="minus bg-dark">-</span>
+                        <input type="number" class="count" name="qty" value="1">
+                        <span class="plus bg-dark">+</span>
+                    </div>
                     <div class="modal__btn-area">
 
                         <button class="btn__selecionar">Selecionar</button>
@@ -51,20 +48,17 @@
 
             <div class="card-area__card">
                 <div class="area-img">
-                    <img class="card-area__foto" src="./img/cupcake.png" alt="Imagem de um cupcake">
+                    <img class="card-area__foto" src="./img/macarons.png" alt="Imagem de macarons">
                 </div>
-                <h2 class="card-area__title">Cupcake de Chocolate</h2>
+                <h2 class="card-area__title">Macarons Variados </h2>
                 <span class="card-area__price">R$10,00</span>
-
                 <div class="modal__unit-control">
-                    <button class="card-area__button-add-remove">
-                        <i class="fa-solid fa-circle-minus"></i>
-                    </button>
-                    <span id="valor">1</span>
-                    <button class="card-area__button-add-remove">
-                        <i class="fa-solid fa-circle-plus"></i>
-                    </button>
 
+                    <div class="qty mt-5">
+                        <span class="minus bg-dark">-</span>
+                        <input type="number" class="count" name="qty" value="1">
+                        <span class="plus bg-dark">+</span>
+                    </div>
                     <div class="modal__btn-area">
 
                         <button class="btn__selecionar">Selecionar</button>
@@ -77,22 +71,27 @@
                 </div>
                 <h2 class="card-area__title">Macarons Variados </h2>
                 <span class="card-area__price">R$10,00</span>
-
                 <div class="modal__unit-control">
-                    <button class="card-area__button-add-remove">
-                        <i class="fa-solid fa-circle-minus"></i>
-                    </button>
-                    <span id="valor">1</span>
-                    <button class="card-area__button-add-remove">
-                        <i class="fa-solid fa-circle-plus"></i>
-                    </button>
 
+                    <div class="qty mt-5">
+                        <span class="minus bg-dark">-</span>
+                        <input type="number" class="count" name="qty" value="1">
+                        <span class="plus bg-dark">+</span>
+                    </div>
                     <div class="modal__btn-area">
 
                         <button class="btn__selecionar">Selecionar</button>
                     </div>
                 </div>
             </div>
+
+            <section class="carrinho">
+                <span class="carrinho__titulo">Carrinho de Compras</span>
+                <ul class="carrinho__lista">
+                  
+                </ul>
+                <div class="carrinho__total">Total: R$ <span id="total-amount">0.00</span></div>
+            </section>
 
         </section>
         <section class="area-bota-adicionarcarrinho">
@@ -102,58 +101,7 @@
             </div>
 
         </section>
-        
 
-        <section class="carrinho">
-
-            <span class="carrinho__titulo">Pedido</span>
-
-            <div class="carrinho__item1">
-                <img src="./img/sorvete.png" alt="Imagem sorvete Morango" class="carrinho__img">
-                <div class="carrinho__preco-area">
-                    <p class="carrinho__texto">Sorvete de Morango</p>
-                    <span class="carrinho__texto">R$ 10,00</span>
-                </div>
-                <div class="area-carrinho-quantidade-produto">
-                    <span id="valor">1</span>
-                </div>
-
-            </div>
-
-            <div class="carrinho__item2">
-                <img src="./img/cupcake.png" alt="Cupcake de Chocolate" class="carrinho__img">
-                <div class="carrinho__preco-area">
-                    <p class="carrinho__texto">Cupcake de Chocolate</p>
-                    <span class="carrinho__texto">R$ 10,00</span>
-                </div>
-                <div class="area-carrinho-quantidade-produto">
-                    <span id="valor">1</span>
-                </div>
-
-            </div>
-
-
-                <div class="carrinho__item3">
-                    <img src="./img/macarons.png" alt="Macarons" class="carrinho__img">
-                    <div class="carrinho__preco-area">
-                        <p class="carrinho__texto">Macarons Variados</p>
-                        <span class="carrinho__texto">R$ 10,00</span>
-                    </div>
-                    <div class="area-carrinho-quantidade-produto">
-                        <span id="valor">1</span>
-                    </div>
-
-                </div>
-                <div class="carrinho__preco-final">
-                    <span class="carrinho__total">Total</span>
-                    <span class="carrinho__valor-total">R$ 72,00</span>
-                </div>
-
-                <button class="btn__carrinho">
-                    Finalizar Compra
-                </button>
-
-        </section>
 
     </main>
 
