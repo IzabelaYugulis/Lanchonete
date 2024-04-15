@@ -145,6 +145,23 @@ main {
 .btn__adicionar-carrinho:hover{
     background-color: var(--color-rosa-hover);
 }
+
+
+.btn__limpar-carrinho{
+    font-size: 1.25rem;
+    margin: 20px;
+   background-color: var(--color-rosa-medio);
+   font-family: var(--font-botao);
+   color: var(--color-branco);
+   border: none;
+   border-radius: 6px;
+   height: 3rem;
+   width: 20rem;
+}
+.btn__limpar-carrinho:hover{
+    background-color: var(--color-rosa-hover);
+}
+
 .qty .count {
     font-family: var(--font-botao);
     color: var(--color-rosa-escuro);
@@ -253,10 +270,14 @@ input:disabled{
 
 .carrinho__lista {
     list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
+    padding: 10px; 
+    margin: 10px; 
+    border: 20px;
     max-height: calc(80vh - 50px - 40px);
     overflow-y: auto; 
+    color: var(--color-rosa-escuro);
+    font-family: var(--font-subtitulo);
+    font-size: 2rem;
 }
 
 .carrinho__icones {
